@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Friend Finder Survey</title>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <div class="container">
+
+        <form>
+            <h1>Survey Questions</h1>
+            <hr>
+
+            <h2>About You</h2>
+
+            <label for="inputName">Name (Required)</label>
+            <input type="email" class="form-control" id="inputName" aria-describedby="name" placeholder="Enter Name">
+
+            <label for="inputPhoto">Link to Photo</label>
+            <input type="email" class="form-control" id="inputPhoto" aria-describedby="photo"
+                placeholder="Enter Link to Photo">
+            <hr>
+            <br><br>
+
+
+
+
+
+            <div class="form-group">
+                <h3>Question 1</h3>
+                <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
+                <select class="form-control form-control-sm" id="q-one" style="width: 50%">
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2 (Disagree)</option>
+                    <option selected="selected">3 (Neutral)</option>
+                    <option>4 (Agree)</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+
+                <br><br>
+
+
+                <h3>Question 2</h3>
+                <h4>Generally speaking, you rely more on your experience than your imagination.</h4>
+                <select class="form-control form-control-sm" id="q-two" style="width: 50%">
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2 (Disagree)</option>
+                    <option selected="selected">3 (Neutral)</option>
+                    <option>4 (Agree)</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+                <br><br>
+
+                <h3>Question 3</h3>
+                <h4>You find it easy to stay relaxed and focused even when there is some pressure.</h4>
+                <select class="form-control form-control-sm" id="q-three" style="width: 50%">
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2 (Disagree)</option>
+                    <option selected="selected">3 (Neutral)</option>
+                    <option>4 (Agree)</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+                <br><br>
+
+                <h3>Question 4</h3>
+                <h4>You rarely do something just out of sheer curiosity.</h4>
+                <select class="form-control form-control-sm" id="q-four" style="width: 50%">
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2 (Disagree)</option>
+                    <option selected="selected">3 (Neutral)</option>
+                    <option>4 (Agree)</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+                <br><br>
+
+                <h3>Question 5</h3>
+                <h4>People can rarely upset you.</h4>
+                <select class="form-control form-control-sm" id="q-five" style="width: 50%">
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2 (Disagree)</option>
+                    <option selected="selected">3 (Neutral)</option>
+                    <option>4 (Agree)</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+                <br><br>
+
+                <h3>Question 6</h3>
+                <h4>It is often difficult for you to relate to other people’s feelings.</h4>
+                <select class="form-control form-control-sm" id="q-six" style="width: 50%">
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2 (Disagree)</option>
+                    <option selected="selected">3 (Neutral)</option>
+                    <option>4 (Agree)</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+                <br><br>
+
+                <h3>Question 7</h3>
+                <h4>In a discussion, truth should be more important than people’s sensitivities.</h4>
+                <select class="form-control form-control-sm" id="q-seven" style="width: 50%">
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2 (Disagree)</option>
+                    <option selected="selected">3 (Neutral)</option>
+                    <option>4 (Agree)</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+                <br><br>
+
+                <h3>Question 8</h3>
+                <h4>You rarely get carried away by fantasies and ideas.</h4>
+                <select class="form-control form-control-sm" id="q-eight" style="width: 50%">
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2 (Disagree)</option>
+                    <option selected="selected">3 (Neutral)</option>
+                    <option>4 (Agree)</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+                <br><br>
+
+                <h3>Question 9</h3>
+                <h4>You think that everyone’s views should be respected regardless of whether they are supported by
+                    facts or not.</h4>
+                <select class="form-control form-control-sm" id="q-nine" style="width: 50%">
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2 (Disagree)</option>
+                    <option selected="selected">3 (Neutral)</option>
+                    <option>4 (Agree)</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+                <br><br>
+
+                <h3>Question 10</h3>
+                <h4>You feel more energetic after spending time with a group of people.</h4>
+                <select class="form-control form-control-sm" id="q-ten" style="width: 50%">
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2 (Disagree)</option>
+                    <option selected="selected">3 (Neutral)</option>
+                    <option>4 (Agree)</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+                <br><br>
+
+            </div>
+
+            <button type="button" class="btn btn-primary btn-lg btn-block">Submit</button>
+
+        </form>
+    </div>
+    </div>
+
+
+    <script>
+
+        $('.btn').click(function (answers) {
+            answers.preventDefault();
+            alert('You have clicked the button')
+        })
+
+    </script>
+
+</body>
+
+</html>

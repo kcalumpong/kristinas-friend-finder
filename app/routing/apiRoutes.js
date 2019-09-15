@@ -31,7 +31,7 @@ module.exports = function (app) {
             } 
 
         }
-        tableArray.push(userInput);
+        // tableArray.push(userInput);
         res.json(bestmatch);
     });
 };

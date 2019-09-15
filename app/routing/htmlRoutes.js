@@ -1,8 +1,4 @@
-// var express = require('express');
-// var app = express();
-
 var path = require('path');
-// var PORT = process.env.PORT || 3000;
 
 module.exports = function(app) {
     app.get("/", function(req,res){
@@ -16,7 +12,3 @@ module.exports = function(app) {
     });
 
 }
-
-// app.listen(PORT, function() {
-//     console.log("App listening on PORT " + PORT);
-// })

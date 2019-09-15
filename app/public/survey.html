@@ -29,7 +29,7 @@
             <label for="inputName">Name (Required)</label>
             <input type="email" class="form-control" id="inputName" aria-describedby="name" placeholder="Enter Name" style="width: 50%">
 
-            <label for="inputPhoto">Link to Photo</label>
+            <label for="inputPhoto">Link to Photo (Required)</label>
             <input type="email" class="form-control" id="inputPhoto" aria-describedby="photo"
                 placeholder="Enter Link to Photo" style="width: 50%">
             <hr>
@@ -160,7 +160,7 @@
         </footer>
 
         <div id="results-modal" class="modal fade" role="dialog">
-            <div class="modal-dialog modal-lg">
+            <div class="modal-dialog modal-md">
 
                 <div class="modal-content">
 
@@ -170,7 +170,7 @@
                     </div>
                     <div class="modal-body">
                         <h2 id="match-name" match-name></h2>
-                        <img id="match-img" src="#" alt="celebrity image">
+                        <img id="match-img" src="#" alt="celebrity image" style="width: 250px">
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -185,6 +185,13 @@
         $('.btn').on("click", function (event) {
             event.preventDefault();
 
+                if ($("#inputName").val() === "") {
+                   $("#inputName").css("border-color", "red");
+                }
+                if ($("#inputPhoto").val() === "") {
+                   $("#inputPhoto").css("border-color", "red");
+                }
+            
             function validateForm() {
                 var isValid = true;
                 $(".form-control").each(function () {
@@ -222,14 +229,12 @@
 
             $.post("/api/friends", friendData, function (data) {
 
-                $("#match-name").text("Your Friend Match: " + data.name);
+                $("#match-name").text("Your Friend Match: " + "\n" + data.name);
                 $("#match-img").attr("src", data.photo);
                 $("#results-modal").modal("toggle");
             });
         })
 
     </script>
-
 </body>
-
 </html>

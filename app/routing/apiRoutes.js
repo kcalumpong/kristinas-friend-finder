@@ -29,9 +29,7 @@ module.exports = function (app) {
                 bestmatch.photo = currentFriend.photo;
                 bestmatch.diff = diff;
             } 
-
         }
-        // tableArray.push(userInput);
         res.json(bestmatch);
     });
 };
